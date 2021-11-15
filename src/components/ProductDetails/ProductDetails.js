@@ -11,7 +11,7 @@ const ProductDetails = () => {
   const [product,setProduct]=useState([]);
 
   useEffect(()=>{
-   fetch(`https://aqueous-fjord-12941.herokuapp.com/products/${id}`)
+   fetch(`https://peaceful-mountain-71593.herokuapp.com/products/${id}`)
    .then(res=> res.json())
    .then(data => setProduct(data))
   },[])
@@ -27,7 +27,7 @@ const ProductDetails = () => {
  data.status ="pending";
 
     console.log(data)
-    axios.post('https://aqueous-fjord-12941.herokuapp.com/orders',data)
+    axios.post('https://peaceful-mountain-71593.herokuapp.com/orders',data)
     .then(res =>{
       if(res.data.insertedId){
         alert('Order Successful');

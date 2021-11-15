@@ -8,7 +8,7 @@ const [products,setProducts] = useState(null);
 
   useEffect(()=>{
 setTimeout(()=>{
-  fetch('https://aqueous-fjord-12941.herokuapp.com/products')
+  fetch('https://peaceful-mountain-71593.herokuapp.com/saveproducts')
 .then(res=> res.json())
 .then(data=> setProducts(data))
 },1500)

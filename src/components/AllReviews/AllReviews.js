@@ -5,7 +5,7 @@ import './AllReviews.css'
 const AllReviews = () => {
   const[reviews,setReviews]=useState([]);
   useEffect(()=>{
-    fetch('https://aqueous-fjord-12941.herokuapp.com/reviews')
+    fetch('https://peaceful-mountain-71593.herokuapp.com/savereviews')
     .then(res => res.json())
     .then(data=> setReviews(data))
   },[])

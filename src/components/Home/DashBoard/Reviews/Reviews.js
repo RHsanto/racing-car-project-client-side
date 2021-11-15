@@ -8,7 +8,7 @@ const Reviews = () => {
   const {user}=useAuth();
   const onSubmit = data =>{
      console.log(data)
-     axios.post('https://aqueous-fjord-12941.herokuapp.com/reviews',data)
+     axios.post('https://peaceful-mountain-71593.herokuapp.com/reviews',data)
      .then(res =>{
        console.log(res);
        if(res.data.insertedId){

@@ -5,7 +5,7 @@ const AllOrders = () => {
  
 
   useEffect(()=>{
-    fetch('https://aqueous-fjord-12941.herokuapp.com/orders')
+    fetch('https://peaceful-mountain-71593.herokuapp.com/orders')
     .then(res=> res.json())
     .then(data=> setAllOrders(data))
     
@@ -13,7 +13,7 @@ const AllOrders = () => {
 
          // here orders status update
     const updateOrders = id=>{
-      const url = `https://aqueous-fjord-12941.herokuapp.com/orders/${id}`
+      const url = `https://peaceful-mountain-71593.herokuapp.com/orders/${id}`
       fetch(url,{
         method: "PUT",
         headers: {"content-type": "application/json"},
@@ -32,7 +32,7 @@ const AllOrders = () => {
        const handleDelete = id =>{
         const proceed = window.confirm('Are you sure , you want to delete ?');
         if(proceed){
-          const url =`https://aqueous-fjord-12941.herokuapp.com/orders/${id}`
+          const url =`https://peaceful-mountain-71593.herokuapp.com/orders/${id}`
           fetch(url,{
               method: 'DELETE'
       
