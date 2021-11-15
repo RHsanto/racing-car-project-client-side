@@ -5,7 +5,7 @@ const AllOrders = () => {
  
 
   useEffect(()=>{
-    fetch('https://peaceful-mountain-71593.herokuapp.com/orders')
+    fetch('https://peaceful-mountain-71593.herokuapp.com/saveorders')
     .then(res=> res.json())
     .then(data=> setAllOrders(data))
     
