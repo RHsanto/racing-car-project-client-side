@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(()=>{
 setTimeout(()=>{
-  fetch('http://localhost:5000/products')
+  fetch('https://aqueous-fjord-12941.herokuapp.com/products')
 .then(res=> res.json())
 .then(data=> setProducts(data.slice(0,6)))
 },1500)
