@@ -1,0 +1,13 @@
+.reviews-section{
+  background-image: url('https://grandprix.qodeinteractive.com/wp-content/uploads/2019/09/h1-bg-img-1.jpg?id=250');
+  height: 50em;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.review-slider{
+  margin-top: 10em;
+}
+.slider-img img{
+  width: 150px;
+  height: 150px;
+}

@@ -1,0 +1,37 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+.nav-container{
+  background-color: black;
+}
+.navbar-nav li{
+margin-right: 30px;
+font-size: 1.2em;
+color: rgb(255, 255, 255);
+font-weight: 600;
+padding: 10px 0px;
+}
+
+.login-img{
+  width: 50px;
+  height: 50px;
+  margin: 10px 85px;
+}
+ul.dropdown-menu.mt-2.show {
+  padding: 10px;
+  width: 250px;
+  margin-left: 10px;
+}
+.name{
+width: 200px;
+margin: 5px ;
+color: white;
+}
+.items:hover{
+  background-color: rgb(183, 210, 235);
+}
+

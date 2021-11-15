@@ -1,0 +1,24 @@
+
+.about{
+  height: 50%;
+  background-image: url("https://react-tour-pagla.web.app/static/media/why-us-cover.a7f385e2.png");
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.1);
+}
+.about-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:  serif;
+  
+}
+.about-details h1{
+  font-size:3.5em;
+}
+.about-details p{
+  font-size: 1.2em;
+}
+.about-img img{
+width: 100%;
+margin: 100px 0px;
+}
+

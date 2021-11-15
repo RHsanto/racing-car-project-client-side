@@ -1,0 +1,59 @@
+[
+  {"_id":"1",
+    "name":"TVS Apache RR 310",
+   "img":"https://media.zigcdn.com/media/model/2021/Aug/2022-apache-rr-310_600x400.jpg",
+  "price" : "2.59 Lakh",
+   "description":"The TVS Apache RR 310 continues to impress with its long list of features. The TFT display can now store and view documents like the bike’s RC card and licence on the instrument cluster. TVS has even introduced a dynamic engine rev limit indicator, day trip meter, and over speed indication. Other notable features include all-LED illumination, a slip-and-assist clutch, and dual-channel ABS with different levels of intervention. Sadly, it cannot be turned off completely or disabled for the rear wheel.",
+   "ratings":"4.5"
+     
+},
+  {"_id":"2",
+    "name":"Yamaha R15 V4",
+   "img":"https://media.zigcdn.com/media/model/2021/Sep/yamaha-r15-v4-dark-right-side-view_600x400.jpg",
+   "price" : "1.80 Lakh ",
+   "description":"The Yamaha R15 V4 is powered by a 155cc single-cylinder liquid-cooled 4-valve motor with Variable Valve Actuation (VVA). It makes 18.4PS and 14.2Nm. It also gets a slip-and-assist clutch. While the Deltabox frame remains the same, Yamaha has now equipped the R15 with a new USD fork, a first for the India-spec bike. At the rear, the same link-type monoshock continues to handle suspension duties. Braking hardware consists of a 282mm front disc with a twin-piston caliper and a 220mm rear disc with a single-piston caliper. The R15 V4 rolls on 17-inch alloys shod with a 100/80 bias-ply front and 140/70 rear radial tyres.",
+   "ratings":"4.5"
+     
+},
+  {
+    "_id":"3",
+    "name":"Yamaha FZS-FI V3  ",
+   "img":"https://media.zigcdn.com/media/model/2021/Feb/yamaha-fzsfi-new-right-side-view_600x400.jpg",
+   "price" : "2 Lakh ",
+   "description":"The 149cc, single-cylinder, air-cooled, fuel-injected motor remains unchanged. It makes 13.2PS of power at 8000rpm and 12.8Nm of torque at 6000rpm, mated to a 5-speed transmission. However, Yamaha says the engine is now tuned for better low-end performance. The same goes for the bike's underpinnings. The FZS-Fi retains its telescopic fork and monoshock setup. Anchoring the bike is a 282mm disc up front and a 220mm disc at the rear. Tyre dimensions remain unchanged as well - a 100/80-section type up front and a 140/60-section tyre at the rear.",
+   "ratings":"4"
+     
+},
+  {"_id":"4",
+    "name":"KTM RC 200  ",
+   "img":"https://media.zigcdn.com/media/model/2020/Mar/ktm-rc-200-right-side-view_600x400.jpg",
+   "price" : "2.50 Lakh  ",
+   "description":"The 199.5cc motor has been robbed of a little performance, down by 0.83PS and 0.2Nm to 25PS and 19.2Nm. But it is still the most powerful 200cc bike in India today. And despite meeting stricter emission norms, KTM has managed to keep the underbelly exhaust system. The engine continues to feature fuel-injection but doesn’t get ride-by-wire like the 390s. The KTM signature trellis frame which holds everything together continues to be a single-piece unit, unlike the bolt-on subframe design seen on the Duke. WP suspension is present at both ends - an upside-down fork and preload-adjustable monoshock. The bike is brought to a stop by ByBre disc brakes at both ends (300mm/230mm) with the assistance of dual-channel ABS. The 9.5-litre fuel tank could prove too small if you’re looking to tour long distances.",
+   "ratings":"4.5"
+     
+},
+  {"_id":"5",
+    "name":"Yamaha FZS-FI V3  ",
+   "img":"https://media.zigcdn.com/media/model/2021/Feb/yamaha-fzsfi-new-right-side-view_600x400.jpg",
+   "price" : "2 Lakh ",
+   "description":"The 149cc, single-cylinder, air-cooled, fuel-injected motor remains unchanged. It makes 13.2PS of power at 8000rpm and 12.8Nm of torque at 6000rpm, mated to a 5-speed transmission. However, Yamaha says the engine is now tuned for better low-end performance. The same goes for the bike's underpinnings. The FZS-Fi retains its telescopic fork and monoshock setup. Anchoring the bike is a 282mm disc up front and a 220mm disc at the rear. Tyre dimensions remain unchanged as well - a 100/80-section type up front and a 140/60-section tyre at the rear.",
+   "ratings":"4"
+     
+},
+  {"_id":"6",
+    "name":"Suzuki V-Strom 650XT",
+   "img":"https://media.zigcdn.com/media/model/2020/Nov/suzuki-v-strom-650xt-abc-right-side-view_600x400.jpg",
+   "price" : "8.90 Lakh ",
+   "description":"The 645cc DOHC 90-degree V-Twin motor now meets BS6 emission norms and as a result, engine output has fallen by 0.3PS and 0.3Nm, down to 70.7PS and 62Nm. Aside from the updates to the motor, there are no other changes on the BS6 bike. It continues to roll on wire-spoke wheels in a 19-inch/17-inch combo, while suspension is handled by a 43mm telescopic fork and linked monoshock adjustable for preload and rebound damping. Stoppers are in the form of twin 320mm discs up front bitten by two-piston calipers and a single 260mm disc at the rear clamped on by a single-piston caliper.",
+   "ratings":"4.5"
+     
+},
+  {"_id":"7",
+    "name":"Suzuki V-tomtom 850XT",
+   "img":"https://grandprix.qodeinteractive.com/wp-content/uploads/2019/10/h4-slider-2-img-2.png",
+   "price" : "10 Lakh ",
+   "description":"The 645cc DOHC 90-degree V-Twin motor now meets BS6 emission norms and as a result, engine output has fallen by 0.3PS and 0.3Nm, down to 70.7PS and 62Nm. Aside from the updates to the motor, there are no other changes on the BS6 bike. It continues to roll on wire-spoke wheels in a 19-inch/17-inch combo, while suspension is handled by a 43mm telescopic fork and linked monoshock adjustable for preload and rebound damping. Stoppers are in the form of twin 320mm discs up front bitten by two-piston calipers and a single 260mm disc at the rear clamped on by a single-piston caliper.",
+   "ratings":"4.4"
+     
+}
+]

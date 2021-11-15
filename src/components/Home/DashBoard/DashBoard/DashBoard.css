@@ -1,0 +1,17 @@
+.dash-nav li{
+color: black;
+list-style: none;
+text-align: justify;
+margin-left: 20px;
+padding: 10px;
+}
+.dash-nav li:hover {
+  background-color: rgb(183, 210, 235);
+}
+.fas, .fab{
+  margin-right: 25px;
+  color: #0D6EFD;
+}
+.admin{
+  margin:10px 90px ;
+}

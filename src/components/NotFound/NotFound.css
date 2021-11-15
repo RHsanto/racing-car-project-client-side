@@ -1,0 +1,29 @@
+.error-div{
+  background-color: #030005;
+  height:62em;
+}
+.error{
+  margin-top: 100px;
+  font-size: 13em;
+  font-weight: 800;
+  color: #030005;
+  text-shadow: -1px -1px 0 #8400ff, 1px 1px 0 #ff005a;
+  }
+  .error-message{
+    color: rgb(14, 13, 13);
+    text-shadow: 0 2px 0 #8400ff;
+    font-size: 4em;
+    text-transform:uppercase;
+    margin-bottom: 50px;
+  }
+  .homepage-btn{
+    font-size: 22px;
+    border:1px solid #8400ff;
+    color: #8400ff;
+    letter-spacing: 2px;
+   
+  }
+  .homepage-btn:hover{
+    color: #ff005a ;
+    border:1px solid #ff005a;
+  }

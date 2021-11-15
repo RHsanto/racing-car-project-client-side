@@ -1,0 +1,10 @@
+.product-details-section{
+  margin: 100px 0px;
+}
+.booking-from input,textarea, .order-select{
+  margin: 10px auto;
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  
+}
