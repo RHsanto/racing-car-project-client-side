@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory, useLocation } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import Footer from '../Footer/Footer';
@@ -10,7 +10,7 @@ import './Login.css'
 const Login = () => {
   const {signInUsingGoogle,handleEmailChange,handlePasswordChange,error,setError,signInWithEmail,email,password,saveUser2}=useAuth();
   const location = useLocation();
-  const history = useHistory();
+  const navigate = useNavigate();
   const redirect_uri = location.state?.from || '/dashboard';
 
   const handleLogin=e=>{
@@ -20,7 +20,7 @@ const Login = () => {
       // Signed in 
       const user = userCredential.user;
       setError("")
-      history.push( redirect_uri);
+      navigate( redirect_uri);
       console.log(user);
     })
     .catch((error) => {
@@ -34,7 +34,7 @@ const Login = () => {
     .then(result=>{
      const user = result.user;
      saveUser2(user.email,user.displayName);
-     history.push( redirect_uri);
+     navigate( redirect_uri);
      })
      
   }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useHistory, useLocation } from 'react-router';
+import {  useLocation, useNavigate } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 import Navigation from '../Home/Navigation/Navigation';
 import Footer from '../Footer/Footer';
@@ -8,7 +8,7 @@ const Register = () => {
   
   const {signInUsingGoogle,handleEmailChange,handlePasswordChange,handleNameChange,error2,setError2,createNewUser,email,password,displayName,saveUser,saveUser2}=useAuth();
   const location = useLocation();
-  const history = useHistory();
+  const navigate = useNavigate();
   const redirect_uri = location.state?.from || '/dashboard';
 
   const handleSubmit =e=>{
@@ -18,7 +18,7 @@ const Register = () => {
     const user = userCredential.user;
     saveUser(email,displayName);
     setError2("")
-    history.push( redirect_uri);
+    navigate( redirect_uri);
     console.log(user);
     })
     .catch((error) => {
@@ -33,7 +33,7 @@ const Register = () => {
     .then(result=>{
      const user = result.user;
      saveUser2(user.email,user.displayName);
-     history.push( redirect_uri);
+     navigate( redirect_uri);
      })
      
   }

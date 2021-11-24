@@ -9,29 +9,18 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Reviews from '../Reviews/Reviews'
 import {
-  Switch,
-  Route,
   Link,
-  useRouteMatch
+  Outlet
 } from "react-router-dom";
 
 import './DashBoard.css'
-import MyOrder from '../MyOrder/MyOrder';
-import Payment from '../Payment/Payment';
 import useAuth from '../../../../hooks/useAuth';
-import AllOrders from '../AdminPannel/AllOrders/AllOrders';
-import AddProduct from '../AdminPannel/AddProduct/AddProduct';
-import MakeAdmin from '../AdminPannel/MakeAdmin/MakeAdmin';
-import DashBoardHome from '../DashBoardHome/DashBoardHome';
-import AdminRoute from '../../../Login/AdminRoute/AdminRoute';
 
 
 const drawerWidth = 240;
 
 function DashBoard(props) {
-  let { path, url } = useRouteMatch();
   const {user,logOut,admin}= useAuth();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -54,19 +43,19 @@ function DashBoard(props) {
             {admin && 
             <> 
             <Link to='/'> <li> <i class="fas fa-house-user"></i> Home</li> </Link>
-            <Link to={`${url}`}><li><i class="fas fa-clipboard"></i> Dashboard</li></Link>
-            <Link to={`${url}/all-orders`}><li><i class="fas fa-clipboard"></i> Manage all Orders</li></Link>
-            <Link to={`${url}/add-product`}><li><i class="fas fa-cart-plus"></i> Add product</li></Link>
-            <Link to={`${url}/makeAdmin`}><li><i class="fas fa-user-plus"></i> Make Admin</li></Link>
+            <Link to='/dashboard'><li><i class="fas fa-clipboard"></i> Dashboard</li></Link>
+            <Link to='/dashboard/all-orders'><li><i class="fas fa-clipboard"></i> Manage all Orders</li></Link>
+            <Link to='/dashboard/add-product'><li><i class="fas fa-cart-plus"></i> Add product</li></Link>
+            <Link to='/dashboard/makeAdmin'><li><i class="fas fa-user-plus"></i> Make Admin</li></Link>
             </>
             }
             {!admin && 
                 <>
                  <Link to='/'> <li> <i class="fas fa-house-user"></i> Home</li> </Link>
-                 <Link to={`${url}`}><li><i class="fas fa-clipboard"></i> Dashboard</li></Link>
-                 <Link to={`${url}/my-orders`}><li><i class="fas fa-shopping-cart"></i> My orders</li></Link>
-                 <Link to={`${url}/Payment`}> <li><i class="fab fa-amazon-pay"></i> Payment</li></Link>
-                 <Link to={`${url}/reviews`}><li><i class="fas fa-star"></i> Reviews</li></Link> 
+                 <Link to='/dashboard'><li><i class="fas fa-clipboard"></i> Dashboard</li></Link>
+                 <Link to='/dashboard/my-orders'><li><i class="fas fa-shopping-cart"></i> My orders</li></Link>
+                 <Link to='/dashboard/Payment'> <li><i class="fab fa-amazon-pay"></i> Payment</li></Link>
+                 <Link to='/dashboard/reviews'><li><i class="fas fa-star"></i> Reviews</li></Link> 
                  </>
             }
         
@@ -150,33 +139,7 @@ function DashBoard(props) {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-      
-        <Switch>
-        <Route exact path={path}>
-          <DashBoardHome></DashBoardHome>
-        </Route>
-        <Route path={`${path}/payment`}>
-        <Payment></Payment>
-        </Route>
-        <Route path={`${path}/reviews`}>
-        <Reviews></Reviews>
-        </Route>
-        <Route path={`${path}/my-orders`}>
-         <MyOrder></MyOrder>
-        </Route>
-        <AdminRoute path={`${path}/all-orders`}>
-         <AllOrders></AllOrders>
-        </AdminRoute>
-        <AdminRoute path={`${path}/add-product`}>
-         <AddProduct></AddProduct>
-        </AdminRoute>
-        <AdminRoute path={`${path}/makeAdmin`}>
-         <MakeAdmin></MakeAdmin>
-        </AdminRoute>
-       
-        
-        
-      </Switch>
+       <Outlet></Outlet>
       </Box>
     </Box>
   );

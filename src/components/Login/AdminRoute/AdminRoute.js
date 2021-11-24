@@ -1,10 +1,10 @@
 import React from 'react';
-import { Redirect, Route } from 'react-router';
+import { Navigate, useLocation } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 
 const AdminRoute = ({children, ...rest}) => {
   const {user,admin,isLoading}=useAuth();
-
+  let location = useLocation();
   if(isLoading){
     return <div className="text-center loading">
    <button className="btn btn-primary" type="button" >
@@ -14,26 +14,11 @@ const AdminRoute = ({children, ...rest}) => {
 
   </div>
   }
+if( user.email && admin ){
+  return children;
+}
+return <Navigate to="/login" state={{ from: location }} />
 
-  return (
-    <div>
-    <Route
-   {...rest}
-   render={({ location }) =>
-     user.email && admin ? (
-       children
-     ) : (
-       <Redirect
-         to={{
-           pathname: "/",
-           state: { from: location }
-         }}
-       />
-     )
-   }
- />
-</div>
-  );
 };
 
 export default AdminRoute;

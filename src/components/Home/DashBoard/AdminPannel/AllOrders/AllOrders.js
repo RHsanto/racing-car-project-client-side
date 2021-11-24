@@ -11,7 +11,7 @@ const AllOrders = () => {
     
       },[])
 
-         // here orders status update
+   // here orders status update
     const updateOrders = id=>{
       const url = `https://peaceful-mountain-71593.herokuapp.com/orders/${id}`
       fetch(url,{
