@@ -6,7 +6,7 @@ import Banner from '../Home/Banner/Banner'
 import Footer from '../Footer/Footer'
 import Navigation from './Navigation/Navigation';
 import About from '../About/About';
-
+import { BookLoader } from "react-awesome-loaders";
 const Home = () => {
   const [products,setProducts] = useState(null);
 
@@ -56,14 +56,16 @@ setTimeout(()=>{
  
    </div>
 {/* here add spinner */}
-{!products && <div className='row'>
-        <div className="col mt-5">
-        <button className="btn btn-primary " type="button" >
-  <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-  Loading...
-</button>
-          </div>
-          </div>}
+{!products && <div className='load'>
+        <>
+        <BookLoader
+        background={"linear-gradient(135deg, #6066FA, #4645F6)"}
+        desktopSize={"100px"}
+        mobileSize={"80px"}
+        textColor={"#4645F6"}
+      />
+          </>
+          </ div>}
 
     </div>
  <AllReviews></AllReviews>

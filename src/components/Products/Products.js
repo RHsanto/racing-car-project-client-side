@@ -3,6 +3,7 @@ import Footer from '../Footer/Footer';
 import Navigation from '../Home/Navigation/Navigation';
 import Product from '../Product/Product'
 import './Products.css'
+import { CircleLoader } from "react-awesome-loaders"
 const Products = () => {
 const [products,setProducts] = useState(null);
 
@@ -27,13 +28,17 @@ setTimeout(()=>{
     </Product>)
  )}
 </div>
+
 {/* here add spinner */}
 {!products && <div className='row'>
         <div className="col mt-5">
-        <button className="btn btn-primary " type="button" >
-  <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-  Loading...
-</button>
+        <CircleLoader
+        meshColor={"#6366F1"}
+        lightColor={"#E0E7FF"}
+        duration={1.5}
+        desktopSize={"90px"}
+        mobileSize={"64px"}
+      />
              </div>
           </div>}
        </div>

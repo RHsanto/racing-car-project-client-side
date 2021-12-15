@@ -33,7 +33,7 @@ const AddProduct = () => {
 
       <input type='number' placeholder='enter price'   {...register("price", { required: true })} />
 
-      <input  type='number' placeholder='enter ratings'   {...register("rating", { required: true })} />
+      <input  type='number' placeholder='enter ratings'   {...register("ratings", { required: true })} />
       <textarea className='w-50' placeholder='Write your comments.....' {...register("description")} />
        
       
