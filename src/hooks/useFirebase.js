@@ -28,7 +28,7 @@ import { useEffect } from "react";
    }
 
    useEffect(()=>{
-fetch(`https://peaceful-mountain-71593.herokuapp.com/users/${user.email}`)
+fetch(`https://motorcycle-server.onrender.com/users/${user.email}`)
 .then(res=>res.json())
 .then(data =>setAdmin(data.admin))
 
@@ -57,7 +57,7 @@ fetch(`https://peaceful-mountain-71593.herokuapp.com/users/${user.email}`)
         setIsLoading(false)
       });
       return unsubscribe;
-    },[])
+    },[auth])
    
   
    // here processLogin
@@ -97,7 +97,7 @@ fetch(`https://peaceful-mountain-71593.herokuapp.com/users/${user.email}`)
   // here save user information
   const saveUser = (email,displayName)=>{
    const user = {email, displayName};
-   fetch('https://peaceful-mountain-71593.herokuapp.com/users',{
+   fetch('https://motorcycle-server.onrender.com/users',{
      method: "POST",
      headers:{
        'content-type': 'application/json'
@@ -108,7 +108,7 @@ fetch(`https://peaceful-mountain-71593.herokuapp.com/users/${user.email}`)
 
   const saveUser2 = (email,displayName)=>{
    const user = {email, displayName};
-   fetch('https://peaceful-mountain-71593.herokuapp.com/users',{
+   fetch('https://motorcycle-server.onrender.com/users',{
      method: "PUT",
      headers:{
        'content-type': 'application/json'

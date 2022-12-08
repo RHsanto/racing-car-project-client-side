@@ -6,7 +6,7 @@ const MyOrder = () => {
  const{user}=useAuth();
 
 useEffect(()=>{
-fetch(`https://peaceful-mountain-71593.herokuapp.com/orders/${user.email}`)
+fetch(`https://motorcycle-server.onrender.com/orders/${user.email}`)
 .then(res=> res.json())
 .then(data=> setOrders(data))
 
@@ -16,7 +16,7 @@ fetch(`https://peaceful-mountain-71593.herokuapp.com/orders/${user.email}`)
   const handleDelete = id =>{
     const proceed = window.confirm('Are you sure , you want to delete ?');
     if(proceed){
-      const url =`https://peaceful-mountain-71593.herokuapp.com/orders/${id}`
+      const url =`https://motorcycle-server.onrender.com/orders/${id}`
       fetch(url,{
           method: 'DELETE'
   

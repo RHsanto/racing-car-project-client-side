@@ -11,10 +11,10 @@ const ProductDetails = () => {
   const [product,setProduct]=useState([]);
 
   useEffect(()=>{
-   fetch(`https://peaceful-mountain-71593.herokuapp.com/products/${id}`)
+   fetch(`https://motorcycle-server.onrender.com/products/${id}`)
    .then(res=> res.json())
    .then(data => setProduct(data))
-  },[])
+  },[id])
 
   const { register, handleSubmit ,reset} = useForm();
   const onSubmit = data => {
@@ -27,7 +27,7 @@ const ProductDetails = () => {
  data.status ="pending";
 
     console.log(data)
-    axios.post('https://peaceful-mountain-71593.herokuapp.com/orders',data)
+    axios.post('https://motorcycle-server.onrender.com/orders',data)
     .then(res =>{
       if(res.data.insertedId){
         alert('Order Successful');

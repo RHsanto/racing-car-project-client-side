@@ -5,7 +5,7 @@ const AllOrders = () => {
  
 
   useEffect(()=>{
-    fetch('https://peaceful-mountain-71593.herokuapp.com/saveorders')
+    fetch('https://motorcycle-server.onrender.com/saveorders')
     .then(res=> res.json())
     .then(data=> setAllOrders(data))
     
@@ -13,7 +13,7 @@ const AllOrders = () => {
 
    // here orders status update
     const updateOrders = id=>{
-      const url = `https://peaceful-mountain-71593.herokuapp.com/orders/${id}`
+      const url = `https://motorcycle-server.onrender.com/orders/${id}`
       fetch(url,{
         method: "PUT",
         headers: {"content-type": "application/json"},
@@ -32,7 +32,7 @@ const AllOrders = () => {
        const handleDelete = id =>{
         const proceed = window.confirm('Are you sure , you want to delete ?');
         if(proceed){
-          const url =`https://peaceful-mountain-71593.herokuapp.com/orders/${id}`
+          const url =`https://motorcycle-server.onrender.com/orders/${id}`
           fetch(url,{
               method: 'DELETE'
       

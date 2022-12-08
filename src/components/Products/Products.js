@@ -9,7 +9,7 @@ const [products,setProducts] = useState(null);
 
   useEffect(()=>{
 setTimeout(()=>{
-  fetch('https://peaceful-mountain-71593.herokuapp.com/saveproducts')
+  fetch('https://motorcycle-server.onrender.com/saveproducts')
 .then(res=> res.json())
 .then(data=> setProducts(data))
 },1500)
