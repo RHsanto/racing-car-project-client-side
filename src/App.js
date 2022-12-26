@@ -64,12 +64,8 @@ function App() {
                   </PrivateRoute>
                 }
               ></Route>
-              <Route
-                path="/dashboard"
-                element={
-                  <PrivateRoute>
-                    <DashBoard />
-                  </PrivateRoute>
+              <Route path="/dashboard" element={<PrivateRoute><DashBoard />
+              </PrivateRoute>
                 }
               >
                 <Route exact path="/dashboard" element={<DashBoardHome />}></Route>
